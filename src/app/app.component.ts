@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
     selector: 'my-app',
-    templateUrl: './app.component.html',
+    template: `
+        <h1>Hello Angular</h1>
+        <router-outlet>
+        </router-outlet>
+    `,
 }) 
 export class AppComponent implements OnInit {
     
